@@ -1,0 +1,100 @@
+[2025-10-17 12:21:35] Admin triggered update: order_id=29, new_status=Processing
+[2025-10-17 12:21:35] Updated payments.status for order 29.
+[2025-10-17 12:21:35] Order belongs to user_id=1, customer_name=Christian Ang
+[2025-10-17 12:21:35] Inserted notification for user_id=1, order_id=29, message=Your order #29 is now Processing. We'll notify you when it's completed.
+[2025-10-17 12:28:52] Admin triggered update: order_id=29, new_status=Completed
+[2025-10-17 12:28:52] Updated payments.status for order 29.
+[2025-10-17 12:28:52] Order belongs to user_id=1, customer_name=Christian Ang
+[2025-10-17 12:28:52] Inserted notification for user_id=1, order_id=29, message=Your order #29 has been Completed. Thank you!
+[2025-10-17 12:51:15] Admin triggered update: order_id=30, new_status=Processing
+[2025-10-17 12:51:15] Updated payments.status for order 30.
+[2025-10-17 12:51:15] Order belongs to user_id=1, customer_name=Christian Ang
+[2025-10-17 12:51:15] Inserted notification for user_id=1, order_id=30, message=Your order #30 is now Processing. We'll notify you when it's completed.
+[2025-10-17 12:51:50] Admin triggered update: order_id=30, new_status=Completed
+[2025-10-17 12:51:50] Updated payments.status for order 30.
+[2025-10-17 12:51:50] Order belongs to user_id=1, customer_name=Christian Ang
+[2025-10-17 12:51:50] Inserted notification for user_id=1, order_id=30, message=Your order #30 has been Completed. Thank you!
+[2025-10-17 13:30:42] Admin triggered update: order_id=31, new_status=Processing
+[2025-10-17 13:30:42] Updated payments.status for order 31.
+[2025-10-17 13:30:42] Order belongs to user_id=1, customer_name=Christian Ang
+[2025-10-17 13:30:42] Inserted notification for user_id=1, order_id=31, message=Your order #31 is now Processing. We'll notify you when it's completed.
+[2025-10-17 13:31:05] Admin triggered update: order_id=31, new_status=Completed
+[2025-10-17 13:31:05] Updated payments.status for order 31.
+[2025-10-17 13:31:05] Order belongs to user_id=1, customer_name=Christian Ang
+[2025-10-17 13:31:05] Inserted notification for user_id=1, order_id=31, message=Your order #31 has been Completed. Thank you!
+[2025-10-17 13:58:05] Admin triggered update: order_id=32, new_status=Processing
+[2025-10-17 13:58:05] Updated payments.status for order 32.
+[2025-10-17 13:58:05] Order belongs to user_id=9, customer_name=Christian Ang
+[2025-10-17 13:58:05] Inserted notification for user_id=9, order_id=32, message=Your order #32 is now Processing. We'll notify you when it's completed.
+[2025-10-17 14:00:20] Admin triggered update: order_id=32, new_status=Processing
+[2025-10-17 14:00:20] Updated payments.status for order 32.
+[2025-10-17 14:00:20] Order belongs to user_id=9, customer_name=Christian Ang
+[2025-10-17 14:00:20] Inserted notification for user_id=9, order_id=32, message=Your order #32 is now Processing. We'll notify you when it's completed.
+[2025-10-17 14:00:22] Admin triggered update: order_id=32, new_status=Completed
+[2025-10-17 14:00:22] Updated payments.status for order 32.
+[2025-10-17 14:00:22] Order belongs to user_id=9, customer_name=Christian Ang
+[2025-10-17 14:00:22] Inserted notification for user_id=9, order_id=32, message=Your order #32 has been Completed. Thank you!
+[2025-10-17 14:41:17] Admin triggered update: order_id=33, new_status=Pending
+[2025-10-17 14:41:17] Updated payments.status for order 33.
+[2025-10-17 14:41:17] Order belongs to user_id=14, customer_name=Christian Ang
+[2025-10-17 14:41:17] Inserted notification for user_id=14, order_id=33, message=Hello Christian Ang, your order #33 is now Pending. Please wait for processing.
+[2025-10-17 14:41:24] Admin triggered update: order_id=33, new_status=Completed
+[2025-10-17 14:41:24] Updated payments.status for order 33.
+[2025-10-17 14:41:24] Order belongs to user_id=14, customer_name=Christian Ang
+[2025-10-17 14:41:24] Inserted notification for user_id=14, order_id=33, message=Your order #33 has been Completed. Thank you!
+[2025-10-17 16:11:09] Admin triggered update: order_id=39, new_status=Completed
+[2025-10-17 16:11:09] Updated payments.status for order 39.
+[2025-10-17 16:11:09] Order belongs to user_id=15, customer_name=Christian
+[2025-10-17 16:11:09] Inserted notification for user_id=15, order_id=39, message=Your order #39 has been Completed. Thank you!
+[2025-10-17 16:11:24] Admin triggered update: order_id=36, new_status=Completed
+[2025-10-17 16:11:24] Updated payments.status for order 36.
+[2025-10-17 16:11:24] Order belongs to user_id=15, customer_name=Christian Ang
+[2025-10-17 16:11:24] Inserted notification for user_id=15, order_id=36, message=Your order #36 has been Completed. Thank you!
+[2025-10-17 16:12:21] Admin triggered update: order_id=1, new_status=Cancelled
+[2025-10-17 16:12:21] Updated payments.status for order 1.
+[2025-10-17 16:12:21] ERROR: No user_id found for order 1. orderInfo: {"user_id":null,"customer_name":"mary"}
+[2025-10-17 16:59:17] Admin triggered update: order_id=40, new_status=Processing
+[2025-10-17 16:59:17] Updated payments.status for order 40.
+[2025-10-17 16:59:17] Order belongs to user_id=15, customer_name=Christian
+[2025-10-17 16:59:17] Inserted notification for user_id=15, order_id=40, message=Your order #40 is now Processing. We'll notify you when it's completed.
+[2025-10-17 16:59:25] Admin triggered update: order_id=40, new_status=Completed
+[2025-10-17 16:59:25] Updated payments.status for order 40.
+[2025-10-17 16:59:25] Order belongs to user_id=15, customer_name=Christian
+[2025-10-17 16:59:25] Inserted notification for user_id=15, order_id=40, message=Your order #40 has been Completed. Thank you!
+[2025-10-30 07:00:34] Admin triggered update: order_id=41, new_status=Processing
+[2025-10-30 07:00:34] Updated payments.status for order 41.
+[2025-10-30 07:00:34] Order belongs to user_id=8, customer_name=jhoi
+[2025-10-30 07:00:34] Inserted notification for user_id=8, order_id=41, message=Your order #41 is now Processing. We'll notify you when it's completed.
+[2025-10-30 09:12:14] Admin triggered update: order_id=44, new_status=Completed
+[2025-10-30 09:12:14] Updated payments.status for order 44.
+[2025-10-30 09:12:14] Order belongs to user_id=8, customer_name=MARY JOY SABANDAL
+[2025-10-30 09:12:14] Inserted notification for user_id=8, order_id=44, message=Your order #44 has been Completed. Thank you!
+[2025-10-30 09:12:21] Admin triggered update: order_id=43, new_status=Processing
+[2025-10-30 09:12:21] Updated payments.status for order 43.
+[2025-10-30 09:12:21] Order belongs to user_id=8, customer_name=MARY JOY SABANDAL
+[2025-10-30 09:12:21] Inserted notification for user_id=8, order_id=43, message=Your order #43 is now Processing. We'll notify you when it's completed.
+[2025-10-31 07:11:40] Admin triggered update: order_id=44, new_status=Completed
+[2025-10-31 07:11:40] Setting status_time to NOW() for Completed order 44.
+[2025-10-31 07:11:40] Updated payments.status for order 44. Status_time query: , status_time = NOW()
+[2025-10-31 07:11:40] Order belongs to user_id=8, customer_name=MARY JOY SABANDAL
+[2025-10-31 07:11:40] Inserted notification for user_id=8, order_id=44, message=Your order #44 has been Completed. Thank you!
+[2025-10-31 16:52:10] Admin triggered update: order_id=45, new_status=Completed
+[2025-10-31 16:52:10] Updated payments.status for order 45.
+[2025-10-31 16:52:10] Order belongs to user_id=8, customer_name=maryjoy
+[2025-10-31 16:52:10] Inserted notification for user_id=8, order_id=45, message=Your order #45 has been Completed. Thank you!
+[2025-11-03 13:59:28] Admin triggered update: order_id=46, new_status=Processing
+[2025-11-03 13:59:28] Updated payments.status for order 46.
+[2025-11-03 13:59:28] Order belongs to user_id=8, customer_name=JHOI
+[2025-11-03 13:59:28] Inserted notification for user_id=8, order_id=46, message=Your order #46 is now Processing. We'll notify you when it's completed.
+[2025-11-04 03:55:37] Admin triggered update: order_id=48, new_status=Completed
+[2025-11-04 03:55:37] Updated payments.status for order 48.
+[2025-11-04 03:55:37] Order belongs to user_id=8, customer_name=JHOI
+[2025-11-04 03:55:37] Inserted notification for user_id=8, order_id=48, message=Your order #48 has been Completed. Thank you!
+[2025-11-04 04:03:54] Admin triggered update: order_id=50, new_status=Cancelled
+[2025-11-04 04:03:54] Updated payments.status for order 50.
+[2025-11-04 04:03:54] Order belongs to user_id=8, customer_name=JHOI
+[2025-11-04 04:03:54] Inserted notification for user_id=8, order_id=50, message=Your order #50 has been Cancelled. Contact support if needed.
+[2025-11-04 13:26:16] Admin triggered update: order_id=54, new_status=Processing
+[2025-11-04 13:26:16] Updated payments.status for order 54.
+[2025-11-04 13:26:16] Order belongs to user_id=8, customer_name=JHOI
+[2025-11-04 13:26:16] Inserted notification for user_id=8, order_id=54, message=Your order #54 is now Processing. We'll notify you when it's completed.

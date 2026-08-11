@@ -1,0 +1,884 @@
+/* Postcard Wrapper */
+.postcard-wrapper {
+    flex: 1;
+    overflow-y: auto;
+    padding: 32px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.postcard-title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 24px;
+    color: #0d9488; /* Teal color from Sticker design */
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* Content Grid */
+.postcard-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+}
+
+@media (max-width: 1024px) {
+    .postcard-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Preview Section */
+.postcard-preview {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+}
+
+.main-preview {
+    background: #d1d5db;
+    border-radius: 16px;
+    aspect-ratio: 1; /* Keeps the consistent square container look */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    width: 100%;
+    max-width: 100%;
+}
+
+.main-preview img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.thumbnail-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.thumbnail-row .arrow {
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 8px;
+    transition: all 0.3s;
+}
+
+.thumbnail-row .arrow:hover {
+    opacity: 0.7;
+}
+
+.thumb {
+    width: 96px;
+    height: 96px;
+    background: #d1d5db;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s;
+    object-fit: cover;
+}
+
+.thumb:hover {
+    opacity: 0.8;
+}
+
+/* Form Section */
+.postcard-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    color: #0d9488;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 8px;
+}
+
+.form-group select,
+.form-group input[type="file"],
+.form-group input[type="number"],
+.form-group input[type="text"] {
+    width: 100%;
+    padding: 12px 16px;
+    border: 2px solid #0d9488;
+    border-radius: 12px;
+    font-size: 14px;
+    outline: none;
+    background: white;
+    transition: all 0.3s;
+}
+
+.form-group select:focus,
+.form-group input[type="file"]:focus,
+.form-group input[type="number"]:focus,
+.form-group input[type="text"]:focus {
+    border-color: #0d9488;
+    box-shadow: 0 0 0 3px rgba(13, 148, 136, 0.1);
+}
+
+/* Form Row */
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+/* Radio Group */
+.radio-group {
+    display: flex;
+    gap: 24px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.radio-group label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+}
+
+.radio-group input[type="radio"] {
+    accent-color: #0d9488;
+    width: 16px;
+    height: 16px;
+}
+
+/* Quantity Control */
+.qty-control {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.qty-control button {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #0d9488;
+    border-radius: 8px;
+    background: white;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.qty-control button:hover {
+    background: #f0fdfa;
+}
+
+.qty-control input {
+    width: 100%;
+    min-width: 64px;
+    text-align: center;
+    padding: 8px;
+    border: 2px solid #0d9488;
+    border-radius: 8px;
+    font-weight: 500;
+    outline: none;
+}
+
+/* Upload Note */
+.upload-note {
+    border: 2px dashed #0d9488;
+    border-radius: 12px;
+    padding: 8px 12px;
+    text-align: center;
+    color: #6b7280;
+    font-size: 14px;
+    position: relative;
+}
+
+/* Buttons */
+.button-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-top: 8px;
+}
+
+.btn {
+    padding: 16px;
+    border: none;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s;
+    color: white;
+}
+
+.btn.normal {
+    background: #0d9488;
+}
+
+.btn.normal:hover {
+    background: #0f766e;
+    box-shadow: 0 4px 12px rgba(13, 148, 136, 0.3);
+}
+
+.btn.rush {
+    background: #ea580c;
+}
+
+.btn.rush:hover {
+    background: #c2410c;
+    box-shadow: 0 4px 12px rgba(234, 88, 12, 0.3);
+}
+
+/* Back Button Style (From Sticker Design) */
+.back-btn-black {
+    position: absolute;
+    top: 120px;
+    right: 50px;
+    background-color: #0f766e;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    z-index: 100;
+}
+
+.back-btn-black:hover {
+    background-color: #0f766e;
+    transform: translateX(-3px);
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.7);
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.modal.is-active {
+    opacity: 1;
+    pointer-events: auto;
+    display: flex;
+}
+
+.modal-content {
+    background-color: #ffffff;
+    position: relative; 
+    margin: auto;
+    padding: 40px 30px 30px 30px;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 450px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    text-align: center;
+    transform: translateY(-20px);
+    transition: transform 0.3s ease;
+}
+
+.modal.is-active .modal-content {
+    transform: translateY(0);
+}
+
+.modal-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 24px;
+    color: #aaa;
+    cursor: pointer;
+    font-weight: 300;
+}
+
+.modal-close:hover {
+    color: #333;
+}
+
+.modal-content h3 {
+    margin-top: 0;
+    color: #333;
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.modal-content p {
+    margin-bottom: 30px;
+    color: #666;
+    line-height: 1.6;
+    font-size: 1.05rem;
+}
+
+.modal-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.modal-btn {
+    padding: 18px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 700;
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+    flex-grow: 1;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: 1.0rem;
+}
+
+.modal-btn.stay {
+    background-color: #00897b;
+    color: white;
+    order: 2;
+}
+
+.modal-btn.stay:hover {
+    background-color: #00796b;
+    box-shadow: 0 4px 10px rgba(0, 137, 123, 0.4);
+}
+
+.modal-btn.continue {
+    background-color: #ff6f00;
+    color: white;
+    order: 1;
+}
+
+.modal-btn.continue:hover {
+    background-color: #e65100;
+    box-shadow: 0 4px 10px rgba(255, 111, 0, 0.4);
+}
+
+@media (min-width: 600px) {
+    .modal-buttons {
+        flex-direction: row;
+        gap: 15px;
+    }
+    .modal-btn {
+        order: initial !important;
+    }
+}
+
+/* ... existing postcard.css content ... */
+
+/* ======================= */
+/* SLIDER STYLES (NEW)     */
+/* ======================= */
+
+/* This is the dashed box wrapper */
+.slider-wrapper {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 400px; /* This is the key fix, prevents it from getting wider */
+    height: 220px;
+    margin: 0 auto;
+    border: 2px dashed #999;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fafafa;
+}
+
+/* This holds all the slides */
+.slider-container {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 100%;
+    height: 100%;
+}
+
+/* This is each individual slide */
+.slider-container > div {
+    flex: 0 0 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Ensure images inside don't overflow */
+.slider-container img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
+
+
+/* ========================================
+   POSTCARD PAGE DESCRIPTION SECTION STYLES
+   Add this to your postcard.css file
+   ======================================== */
+
+.description-section {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.description-header {
+    margin-bottom: 30px;
+}
+
+.description-header h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.header-line {
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, #4a90e2 0%, #357abd 100%);
+    border-radius: 2px;
+}
+
+.description-content h3 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 18px;
+    margin-top: 0;
+}
+
+.description-content p {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #555;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+/* Specifications Box */
+.specifications {
+    background: #f8f9fa;
+    border-left: 4px solid #4a90e2;
+    padding: 25px 30px;
+    margin: 30px 0;
+    border-radius: 4px;
+}
+
+.spec-item {
+    font-size: 15px;
+    line-height: 2;
+    color: #333;
+    margin-bottom: 12px;
+    padding-left: 10px;
+}
+
+.spec-item:last-child {
+    margin-bottom: 0;
+}
+
+.spec-item strong {
+    color: #2c3e50;
+    font-weight: 600;
+    display: inline-block;
+    min-width: 200px;
+}
+
+/* Tab Navigation */
+.description-tabs {
+    display: flex;
+    gap: 10px;
+    margin: 30px 0 0 0;
+    border-bottom: 2px solid #e0e0e0;
+    flex-wrap: wrap;
+}
+
+.tab-button {
+    background: transparent;
+    border: none;
+    padding: 15px 25px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #666;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-bottom: 3px solid transparent;
+    position: relative;
+    bottom: -2px;
+}
+
+.tab-button:hover {
+    color: #4a90e2;
+    background: #f8f9fa;
+}
+
+.tab-button.active {
+    color: #4a90e2;
+    border-bottom-color: #4a90e2;
+    background: #f8f9fa;
+}
+
+/* Tab Content */
+.tab-content {
+    display: none;
+    animation: fadeIn 0.3s ease-in;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Additional Finishing Options */
+.additional-finishing {
+    margin: 30px 0;
+}
+
+.additional-finishing h4 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+.finishing-option {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    padding: 20px 25px;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+}
+
+.finishing-option:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-color: #4a90e2;
+    transform: translateY(-2px);
+}
+
+.finishing-option strong {
+    display: block;
+    font-size: 16px;
+    color: #2c3e50;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.finishing-option p {
+    font-size: 14px;
+    line-height: 1.7;
+    color: #666;
+    margin-bottom: 0;
+    text-align: justify;
+}
+
+/* Delivery Information */
+.delivery-info {
+    background: #e8f4f8;
+    border-radius: 6px;
+    padding: 25px 30px;
+    margin: 30px 0;
+}
+
+.delivery-info h4 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    margin-top: 0;
+}
+
+.delivery-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+
+.delivery-info li {
+    font-size: 15px;
+    line-height: 2;
+    color: #333;
+    padding: 8px 0 8px 30px;
+    position: relative;
+}
+
+.delivery-info li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #4a90e2;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.delivery-info li strong {
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+.delivery-note {
+    background: #fff;
+    border-left: 3px solid #4a90e2;
+    padding: 15px 20px;
+    border-radius: 4px;
+    margin-top: 15px;
+}
+
+.delivery-note p {
+    margin: 0 0 10px 0;
+    font-size: 14px;
+    line-height: 1.7;
+    color: #555;
+}
+
+.delivery-note p:last-child {
+    margin-bottom: 0;
+}
+
+/* Note Section */
+.note-section {
+    background: #fff9e6;
+    border-left: 4px solid #ffc107;
+    padding: 18px 25px;
+    margin-top: 30px;
+    border-radius: 4px;
+}
+
+.note-section p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.7;
+    color: #666;
+}
+
+.note-section em {
+    font-style: italic;
+}
+
+/* ========================================
+   RESPONSIVE DESIGN
+   ======================================== */
+
+@media (max-width: 1024px) {
+    .description-section {
+        padding: 30px;
+    }
+    
+    .spec-item strong {
+        min-width: 180px;
+    }
+}
+
+@media (max-width: 768px) {
+    .description-section {
+        padding: 25px 20px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    
+    .description-header h2 {
+        font-size: 24px;
+    }
+    
+    .header-line {
+        width: 60px;
+    }
+    
+    .description-content h3 {
+        font-size: 20px;
+    }
+    
+    .description-content p {
+        font-size: 14px;
+    }
+    
+    .spec-item strong {
+        display: block;
+        min-width: auto;
+        margin-bottom: 5px;
+    }
+    
+    .specifications {
+        padding: 20px;
+    }
+    
+    .description-tabs {
+        gap: 5px;
+        margin: 20px 0 0 0;
+    }
+    
+    .tab-button {
+        padding: 12px 15px;
+        font-size: 13px;
+        flex: 1;
+        min-width: 120px;
+    }
+    
+    .finishing-option {
+        padding: 18px 20px;
+    }
+    
+    .additional-finishing h4,
+    .delivery-info h4 {
+        font-size: 17px;
+    }
+    
+    .delivery-info {
+        padding: 20px;
+    }
+    
+    .delivery-info li {
+        padding-left: 25px;
+        font-size: 14px;
+    }
+    
+    .delivery-note {
+        padding: 12px 15px;
+    }
+    
+    .note-section {
+        padding: 15px 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .description-section {
+        padding: 20px 15px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .description-header h2 {
+        font-size: 20px;
+    }
+    
+    .header-line {
+        width: 50px;
+        height: 3px;
+    }
+    
+    .description-content h3 {
+        font-size: 18px;
+    }
+    
+    .description-content p {
+        font-size: 13px;
+        line-height: 1.6;
+    }
+    
+    .specifications {
+        padding: 15px;
+    }
+    
+    .spec-item {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    
+    .description-tabs {
+        gap: 3px;
+        margin: 15px 0 0 0;
+    }
+    
+    .tab-button {
+        padding: 10px 12px;
+        font-size: 12px;
+        min-width: 100px;
+    }
+    
+    .finishing-option {
+        padding: 15px;
+    }
+    
+    .finishing-option strong {
+        font-size: 15px;
+    }
+    
+    .finishing-option p {
+        font-size: 13px;
+    }
+    
+    .additional-finishing h4,
+    .delivery-info h4 {
+        font-size: 16px;
+    }
+    
+    .delivery-info {
+        padding: 18px 15px;
+    }
+    
+    .delivery-info li {
+        font-size: 13px;
+        padding-left: 22px;
+    }
+    
+    .delivery-note {
+        padding: 10px 12px;
+    }
+    
+    .delivery-note p {
+        font-size: 13px;
+    }
+    
+    .note-section {
+        padding: 12px 15px;
+    }
+    
+    .note-section p {
+        font-size: 13px;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .description-section {
+        box-shadow: none;
+        page-break-inside: avoid;
+    }
+    
+    .finishing-option:hover {
+        transform: none;
+        box-shadow: none;
+    }
+}

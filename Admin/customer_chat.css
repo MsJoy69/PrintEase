@@ -1,0 +1,128 @@
+    
+        body { background: #f4f6f9; font-family: 'Poppins', sans-serif; overflow: hidden; height: 100vh; }
+        
+        /* Layout Structure */
+        .wrapper { display: flex; height: 100vh; width: 100%; }
+        
+        /* Sidebar Styles (kept consistent with your snippet) */
+        .sidebar {
+            width: 250px;
+            background-color: #343a40;
+            color: white;
+            flex-shrink: 0;
+            display: flex;
+            flex-direction: column;
+            padding: 20px 0;
+            overflow-y: auto;
+        }
+        .sidebar h4 { text-align: center; margin-bottom: 25px; font-weight: 600; }
+        .sidebar a { color: #ddd; padding: 12px 20px; text-decoration: none; display: block; transition: 0.3s; }
+        .sidebar a:hover, .sidebar a.active { background-color: #198754; color: white; }
+
+         .logout-btn {
+    /* The critical line: pushes the element to the bottom */
+    margin-top: auto; 
+    /* Set specific styling for the button, adjust width/margin as needed */
+    width: 90%; /* Adjust width to fit the sidebar */
+    margin: 200px auto 20px auto; /* Center it with more space at the bottom */
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+        /* Chat Interface Area */
+        .chat-container {
+            flex-grow: 1;
+            display: flex;
+            background: #fff;
+        }
+
+        /* 1. User List (Middle Column) */
+        .user-list {
+            width: 300px;
+            border-right: 1px solid #ddd;
+            display: flex;
+            flex-direction: column;
+            background: #fff;
+        }
+        .user-list-header { padding: 15px; border-bottom: 1px solid #ddd; background: #f8f9fa; font-weight: bold; }
+        .user-item {
+            padding: 15px;
+            border-bottom: 1px solid #f1f1f1;
+            cursor: pointer;
+            transition: background 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .user-item:hover { background: #f8f9fa; }
+        .user-item.active { background: #e9ecef; border-left: 4px solid #198754; }
+        .avatar { width: 40px; height: 40px; background: #198754; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; }
+
+        /* 2. Chat Area (Right Column) */
+        .chat-area {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            background: #f4f6f9;
+        }
+        .chat-header {
+            padding: 15px 20px;
+            background: #fff;
+            border-bottom: 1px solid #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .chat-box {
+            flex-grow: 1;
+            padding: 20px;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .message {
+            max-width: 70%;
+            padding: 10px 15px;
+            border-radius: 15px;
+            font-size: 14px;
+            position: relative;
+        }
+        .message.admin {
+            align-self: flex-end;
+            background-color: #198754; /* Green for Admin */
+            color: white;
+            border-bottom-right-radius: 2px;
+        }
+        .message.user {
+            align-self: flex-start;
+            background-color: #e9ecef; /* Grey for User */
+            color: #333;
+            border-bottom-left-radius: 2px;
+        }
+        .timestamp { font-size: 10px; opacity: 0.7; margin-top: 5px; display: block; text-align: right; }
+        
+        .chat-input {
+            padding: 15px;
+            background: #fff;
+            border-top: 1px solid #ddd;
+            display: flex;
+            gap: 10px;
+        }
+        .chat-input input {
+            flex-grow: 1;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            outline: none;
+        }
+        .send-btn {
+            background: #198754;
+            color: white;
+            border: none;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
